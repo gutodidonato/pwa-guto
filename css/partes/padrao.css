@@ -1,0 +1,122 @@
+:root {
+  /* Cores */
+  --cor-destaque: rgb(94, 27, 27);
+  --cor-destaque-secundaria: rgb(49, 80, 47);
+  --cor-background: rgb(255 255 255);
+  --cor-fundo: white;
+  --cor-menu: blue;
+}
+
+:root {
+  --cor-fonte-1: black;
+  --cor-fonte-2: darkblue;
+  --cor-fonte-3: white;
+}
+
+:root {
+  /* Tipografia */
+  --fonte-principal: "Arial", sans-serif;
+  --fonte-titulo: "Helvetica", sans-serif;
+  --fonte-escrita: "Poppins";
+}
+
+:root {
+  /* Dimensões */
+  --largura-maxima: 1200px;
+  --altura-minima-conteudo: 11vh;
+
+  /* Bordas e sombras */
+  --borda-arredondada: 6px;
+  --sombra: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+  --cor-nav: #ff000000;
+  --cor-header: #505050;
+  --cor-main: var(--cor-destaque);
+}
+
+/*===============================================================
+                        Reset
+===============================================================*/
+html {
+  scroll-behavior: smooth;
+  box-sizing: content-box;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 62.5%;
+}
+/*===============================================================
+                        Padrão
+===============================================================*/
+
+body {
+  background-color: var(--cor-fundo);
+}
+
+main {
+  background-color: var(--cor-background);
+}
+
+header,
+footer {
+  background-color: var(--cor-header);
+}
+
+#nav {
+  background-color: var(--cor-nav);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#header,
+#footer {
+  min-height: var(--altura-minima-conteudo);
+}
+
+.bloco {
+  max-width: var(--largura-maxima);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  flex: 1;
+  padding: 0px;
+}
+
+#header-superior {
+  height: 5vh;
+}
+
+.linha {
+  width: 100%;
+}
+/*===============================================================
+                        Fontes
+===============================================================*/
+
+p,
+a {
+  font-size: 1.8rem;
+  color: var(--cor-fonte-1);
+}
+
+#nav a {
+  color: var(--cor-fonte-3);
+}

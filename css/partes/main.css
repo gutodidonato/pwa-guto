@@ -1,0 +1,16 @@
+#main {
+  max-width: var(--largura-maxima);
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  height: auto;
+}
+
+#s-main {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  border: 1px solid black;
+}

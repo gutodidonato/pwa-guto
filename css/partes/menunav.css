@@ -1,0 +1,110 @@
+header {
+  width: 100%;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+}
+
+nav {
+  flex: 5;
+}
+.header-bloco {
+  flex: 1;
+}
+
+.header-bloco .logo {
+  width: 10px;
+}
+/*================================
+              MenuNav
+=================================
+=================================
+=================================*/
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bloco-navegacao {
+  display: flex;
+}
+.menunav {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menunav li {
+  border-bottom: 1px solid #bebebe;
+  padding: 5px;
+  margin: 10px;
+  border-radius: var(--borda-arredondada);
+}
+
+.menunav li a {
+  font-size: 1.3rem;
+}
+
+.header_slide-in {
+  transform: translateY(0px);
+  position: fixed;
+  transition: all 0.4s ease-out 0s;
+  max-height: 100px;
+  width: 100%;
+  background-color: #990000c4;
+}
+
+.header_slide-out {
+  transform: translateY(-100%);
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: transform 0.4s ease-in-out 0s;
+  max-height: 100px;
+  background-color: #990000c4;
+}
+/*================================
+              Botao
+=================================*/
+
+.nav-menunav-botao {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-menunav-botao {
+    display: block;
+  }
+}
+
+/*================================
+              Contatos
+=================================*/
+.nav-contato {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  background: var(--cor-destaque);
+  border-radius: 31px;
+}
+
+.nav-contato p {
+  color: #bebebe;
+}
+
+.nav-contato-bloco {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav-contato-bloco p {
+  color: var(--cor-background);
+}
