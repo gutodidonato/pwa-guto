@@ -80,6 +80,11 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 10px;
+}
+
+.linha {
+  width: 100%;
 }
 
 #header,
@@ -100,8 +105,9 @@ main {
   padding: 0px;
 }
 
-#header-superior {
+.superior {
   height: 5vh;
+  background: var(--cor-destaque);
 }
 
 .linha {
@@ -115,6 +121,7 @@ p,
 a {
   font-size: 1.8rem;
   color: var(--cor-fonte-1);
+  margin: 10px 20px;
 }
 
 #nav a {

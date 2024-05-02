@@ -1,0 +1,46 @@
+.main1 {
+  background-color: red;
+  margin: 20px auto;
+}
+
+.main1-bloco {
+  display: flex;
+}
+
+.main1-bloco div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main2 {
+  height: 300px;
+  margin: 10px auto;
+  background: green;
+}
+
+.corpo-main2 {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  height: 0;
+}
+.corpo-main2 img {
+  width: 708px;
+  height: 300px;
+  image-rendering: pixelated;
+}
+
+.conteudo-main2 {
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  clip-path: polygon(0% 0%, 50% 0%, 70% 94%, 0% 94%);
+  height: 100%;
+  padding: 10px;
+}
+
+.conteudo-main2 p {
+  width: 50%;
+}

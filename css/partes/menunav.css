@@ -90,10 +90,11 @@ nav {
 .nav-contato {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 200px;
   align-items: center;
   background: var(--cor-destaque);
   border-radius: 31px;
+  transition: 1s all;
 }
 
 .nav-contato p {
@@ -107,4 +108,26 @@ nav {
 }
 .nav-contato-bloco p {
   color: var(--cor-background);
+}
+
+.nav-contato-bloco {
+  max-height: 0;
+  transition: 0.5 all;
+  overflow: hidden;
+}
+
+.nav-contato:hover .nav-contato-bloco {
+  max-height: 100%;
+  height: 100%;
+  transition: 3s all;
+}
+
+.nav-contato:hover {
+  width: 300px;
+  transition: 1s all;
+}
+
+.nav-contato-bloco a:hover {
+  transform: rotate(360deg);
+  transition: 1s all;
 }
