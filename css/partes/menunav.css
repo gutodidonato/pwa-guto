@@ -59,6 +59,7 @@ nav {
   max-height: 100px;
   width: 100%;
   background-color: #990000c4;
+  z-index: 33;
 }
 
 .header_slide-out {
@@ -69,6 +70,7 @@ nav {
   transition: transform 0.4s ease-in-out 0s;
   max-height: 100px;
   background-color: #990000c4;
+  z-index: 33;
 }
 /*================================
               Botao

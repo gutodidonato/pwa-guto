@@ -1,0 +1,56 @@
+aside {
+  display: flex;
+  flex-direction: column;
+}
+#aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+aside input {
+  font-size: 1rem;
+  border-radius: 2px;
+}
+aside textarea {
+  font-size: 1.3rem;
+}
+
+#aside hr {
+  border-bottom: 1px solid #4747476b;
+  border-top: 1px solid #4747476b;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.aside-col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-col1 img {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.aside-col3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside-col3 img {
+  width: 90%;
+  margin: 0 auto;
+}
