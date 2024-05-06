@@ -226,7 +226,7 @@ nav {
   .nav-bloco-navegacao:not(:has(#checkbox-botao-menu:checked)) .menunav {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    animation: scrollMenuSobe 1s;
   }
 
   .nav-bloco-navegacao:has(#checkbox-botao-menu:checked) .menunav {
@@ -241,6 +241,14 @@ nav {
   }
   to {
     max-height: 200px;
+  }
+}
+@keyframes scrollMenuSobe {
+  from {
+    max-height: 200px;
+  }
+  to {
+    max-height: 0;
   }
 }
 
