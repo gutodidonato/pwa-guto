@@ -77,13 +77,81 @@ nav {
 =================================*/
 
 .nav-menunav-botao {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff00;
+  cursor: pointer;
+  width: 60px;
+  height: 50px;
+  position: relative;
+  gap: 5px;
+  flex-direction: row-reverse;
 }
 
+.tracos-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#checkbox-botao-menu {
+  opacity: 0;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.tran {
+  width: 10px;
+  display: block;
+  background: black;
+  height: 2px;
+  transition: 1s all;
+  width: 20px;
+  height: 3px;
+}
+
+#checkbox-botao-menu:checked ~ span {
+  transition: 1s all;
+}
+
+#checkbox-botao-menu:checked ~ span .top {
+  transform: translate(-25px, 5px) rotate(-45deg);
+  width: 25px;
+  transition: 1s all;
+}
+
+#checkbox-botao-menu:checked ~ span .middle {
+  width: 0;
+  transition: 0.5s all;
+}
+
+#checkbox-botao-menu:checked ~ span .bottom {
+  transform: translate(-25px, -10px) rotate(45deg);
+  width: 25px;
+  transition: 1s all;
+}
+
+#checkbox-botao-menu:checked ~ label {
+  opacity: 0;
+  transition: 1s all;
+}
+
+.nav-menunav-botao label {
+  opacity: 1;
+  font-size: 1.5rem;
+  transition: 2s all;
+}
 @media (max-width: 900px) {
-  .nav-menunav-botao {
-    display: block;
-  }
+  /*
+    .nav-menunav-botao{
+      display: none;
+    }
+  */
 }
 
 /*================================
@@ -116,12 +184,13 @@ nav {
   max-height: 0;
   transition: 0.5 all;
   overflow: hidden;
+  animation: 1s scrollContatoSobe;
 }
 
 .nav-contato:hover .nav-contato-bloco {
-  max-height: 100%;
+  max-height: 200px;
   height: 100%;
-  transition: 3s all;
+  animation: 1s scrollContato;
 }
 
 .nav-contato:hover {
@@ -132,4 +201,62 @@ nav {
 .nav-contato-bloco a:hover {
   transform: rotate(360deg);
   transition: 1s all;
+}
+
+/*================================
+              MOBILE
+=================================*/
+
+@media (max-width: 900px) {
+  #nav {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+  }
+  .menunav {
+    flex-direction: column;
+  }
+  .nav-bloco-navegacao:not(:has(#checkbox-botao-menu:checked)) .menunav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .nav-bloco-navegacao:has(#checkbox-botao-menu:checked) .menunav {
+    max-height: 200px;
+    animation: scrollMenu 1s;
+  }
+}
+
+@keyframes scrollMenu {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+  }
+}
+
+@keyframes scrollContato {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+  }
+}
+@keyframes scrollContatoSobe {
+  from {
+    max-height: 200px;
+  }
+  to {
+    max-height: 0;
+  }
 }

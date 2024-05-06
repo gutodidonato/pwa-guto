@@ -124,6 +124,16 @@ a {
   margin: 10px 20px;
 }
 
+h1 {
+  font-size: 4rem;
+  margin: 10px 20px;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 20px 20px;
+}
+
 #nav a {
   color: var(--cor-fonte-3);
 }
