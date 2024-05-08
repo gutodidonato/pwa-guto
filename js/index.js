@@ -10,16 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentScrollPosition = window.scrollY;
     const telaSobe = currentScrollPosition < lastScrollPosition;
     const telaProximaHeader = currentScrollPosition < 500;
-    const telaMobile = screen.width < 900;
+    const telaMobile = window.innerWidth < 900;
 
     /* Variaveis */
-
-    if (telaSobe && !telaProximaHeader && timeIsRunning && !telaMobile) {
+    if (telaMobile) {
+      header.classList.remove("header_slide-in");
+      header.classList.remove("header_slide-out");
+    } else if (telaSobe && !telaProximaHeader && timeIsRunning && !telaMobile) {
       /* Subiu a tela lá embaixo */
       /*----------*/
       /*----------*/
       header.classList.add("header_slide-in");
       header.classList.remove("header_slide-out");
+      console.log("Sobe");
       /*----------*/
       /*----------*/
     } else if (telaProximaHeader && timeIsRunning && !telaMobile) {
@@ -33,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
           header.classList.remove("header_slide-out");
         }, 250);
         timeIsRunning = true;
+        console.log("Ajuste");
       }
       /*----------*/
       /*----------*/
@@ -48,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       /*----------*/
       header.classList.remove("header_slide-in");
       header.classList.add("header_slide-out");
+      console.log("Desce");
       /*----------*/
       /*----------*/
     }
@@ -55,6 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
       lastScrollPosition = currentScrollPosition;
     }, 100);
   });
-
-  const checkbox = document.querySelector("#checkbox-botao-menu");
 });
