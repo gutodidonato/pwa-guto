@@ -1,5 +1,5 @@
 .main1 {
-  background-color: red;
+  background-color: rgb(128 128 128);
   margin: 20px auto;
 }
 
@@ -27,7 +27,7 @@
   font-family: var(--fonte-escrita);
 }
 
-.corpo-main2 {
+.main2-corpo {
   width: 100%;
   height: 100px;
   background-color: white;
@@ -35,13 +35,13 @@
   justify-content: flex-end;
   height: 0;
 }
-.corpo-main2 img {
+.main2-corpo img {
   width: 708px;
   height: 300px;
   image-rendering: pixelated;
 }
 
-.conteudo-main2 {
+.main2-bloco {
   width: 100%;
   height: 100px;
   background-color: grey;
@@ -50,16 +50,16 @@
   padding: 10px 0;
 }
 
-.conteudo-main2 p:nth-child(1) {
+.main2-bloco p:nth-child(1) {
   width: 50%;
 }
-.conteudo-main2 p:nth-child(2) {
+.main2-bloco p:nth-child(2) {
   width: 55%;
 }
-.conteudo-main2 p:nth-child(3) {
+.main2-bloco p:nth-child(3) {
   width: 60%;
 }
-.conteudo-main2 p:nth-child(4) {
+.main2-bloco p:nth-child(4) {
   width: 65%;
 }
 
@@ -83,7 +83,7 @@
 .main3 p {
   font-family: var(--fonte-escrita);
 }
-.corpo-main3 {
+.main3-corpo {
   width: 100%;
   height: 100px;
   background-color: white;
@@ -91,13 +91,13 @@
   justify-content: flex-start;
   height: 0;
 }
-.corpo-main3 img {
+.main3-corpo img {
   width: 708px;
   height: 340px;
   image-rendering: pixelated;
 }
 
-.conteudo-main3 {
+.main3-bloco {
   width: 100%;
   height: 100px;
   background-color: grey;
@@ -109,19 +109,19 @@
   align-items: flex-end;
 }
 
-.conteudo-main3 p:nth-child(1) {
+.main3-bloco p:nth-child(1) {
   width: 50%;
   text-align: end;
 }
-.conteudo-main3 p:nth-child(2) {
+.main3-bloco p:nth-child(2) {
   width: 55%;
   text-align: end;
 }
-.conteudo-main3 p:nth-child(3) {
+.main3-bloco p:nth-child(3) {
   width: 60%;
   text-align: end;
 }
-.conteudo-main3 div:nth-child(4) {
+.main3-bloco div:nth-child(4) {
   width: 100%;
 }
 
@@ -174,3 +174,103 @@
 /*
 ===================================================
 */
+
+/*
+===================================================
+            main 4
+===================================================
+*/
+
+.main4 {
+  height: 340px;
+  margin: 10px auto;
+  background: rgb(95, 95, 95);
+  width: 100%;
+  overflow: hidden;
+}
+.main4-bloco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.main4-bloco p {
+  width: 23%;
+  background: gainsboro;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  padding: 15px;
+  transition: 1s all;
+}
+
+.main4-bloco p:hover {
+  transform: scale(1.1);
+}
+
+/*
+===================================================
+            main 5
+===================================================
+*/
+
+.main5 {
+  height: 340px;
+  margin: 10px auto;
+  background: rgb(95, 95, 95);
+  width: 100%;
+  overflow: hidden;
+}
+.main5-bloco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main5-bloco-col1,
+.main5-bloco-col2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main5-bloco-col1 p,
+.main5-bloco-col2 p {
+  width: 50%;
+}
+
+.main5-bloco-col2 .icon-whatsapp {
+  font-size: 60px;
+  color: green;
+  background: #ffffff;
+  border-radius: 100%;
+  transition: 1s all;
+}
+
+.main5-bloco-col2 .botao-whats {
+  transition: 4s all cubic-bezier(0, 0.91, 0.82, 0.35);
+}
+
+.main5-bloco-col2 .botao-whats:hover {
+  border-radius: 30%;
+  padding: 20px;
+}
+
+.main5-bloco-col2 .icon-whatsapp:before {
+  border-radius: 50%;
+  transition: 1s box-shadow;
+}
+
+.main5-bloco-col2 .botao-whats:hover .icon-whatsapp:before {
+  box-shadow: 1px 1px 20px white;
+  border-radius: 50%;
+  transition: 0s, 4s box-shadow;
+}
+
+.main5-bloco-col2 .botao-whats:hover,
+.main5-bloco-col2 .botao-whats:hover .icon-whatsapp {
+  font-size: 120px;
+  transform: rotate(720deg);
+}

@@ -27,6 +27,10 @@ aside textarea {
   font-size: 1.3rem;
 }
 
+aside picture {
+  width: 90%;
+}
+
 #aside hr {
   border-bottom: 1px solid #4747476b;
   border-top: 1px solid #4747476b;
@@ -41,7 +45,7 @@ aside textarea {
 }
 
 .aside-col1 img {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -59,7 +63,7 @@ aside textarea {
 .form_mini_submit {
   background-color: white;
   cursor: pointer;
-  transition: 1s all;
+  transition: 0.5s all;
   border-radius: 25px;
   width: 40%;
   margin: 0 auto;
