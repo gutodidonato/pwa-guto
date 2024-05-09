@@ -18,16 +18,21 @@
 ===============================================================
 */
 .main2 {
-  height: 300px;
+  height: auto;
   margin: 10px auto;
-  background: green;
+  background: grey;
 }
 
 .main2 p {
   font-family: var(--fonte-escrita);
 }
 
-.main2-corpo {
+.main2-bloco {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main2-col2 {
   width: 100%;
   height: 100px;
   background-color: white;
@@ -35,31 +40,31 @@
   justify-content: flex-end;
   height: 0;
 }
-.main2-corpo img {
+.main2-col2 img {
   width: 708px;
-  height: 300px;
+  height: 299px;
   image-rendering: pixelated;
 }
 
-.main2-bloco {
+.main2-col1 {
   width: 100%;
   height: 100px;
   background-color: grey;
   clip-path: polygon(0% 0%, 50% 0%, 70% 94%, 0% 94%);
   height: 100%;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
-.main2-bloco p:nth-child(1) {
+.main2-col1 p:nth-child(1) {
   width: 50%;
 }
-.main2-bloco p:nth-child(2) {
+.main2-col1 p:nth-child(2) {
   width: 55%;
 }
-.main2-bloco p:nth-child(3) {
+.main2-col1 p:nth-child(3) {
   width: 60%;
 }
-.main2-bloco p:nth-child(4) {
+.main2-col1 p:nth-child(4) {
   width: 65%;
 }
 
@@ -73,17 +78,21 @@
 ===============================================================
 */
 .main3 {
-  height: 340px;
+  height: auto;
   margin: 10px auto;
-  background: green;
+  background: grey;
   width: 100%;
   overflow: hidden;
 }
 
+.main3-bloco {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .main3 p {
   font-family: var(--fonte-escrita);
 }
-.main3-corpo {
+.main3-col1 {
   width: 100%;
   height: 100px;
   background-color: white;
@@ -91,37 +100,36 @@
   justify-content: flex-start;
   height: 0;
 }
-.main3-corpo img {
+.main3-col1 img {
   width: 708px;
-  height: 340px;
+  height: 271px;
   image-rendering: pixelated;
 }
 
-.main3-bloco {
+.main3-col2 {
   width: 100%;
-  height: 100px;
   background-color: grey;
   clip-path: polygon(100% 0%, 50% 0%, 30% 94%, 100% 94%);
-  height: 100%;
+  height: auto;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.main3-bloco p:nth-child(1) {
+.main3-col2 p:nth-child(1) {
   width: 50%;
   text-align: end;
 }
-.main3-bloco p:nth-child(2) {
+.main3-col2 p:nth-child(2) {
   width: 55%;
   text-align: end;
 }
-.main3-bloco p:nth-child(3) {
+.main3-col2 p:nth-child(3) {
   width: 60%;
   text-align: end;
 }
-.main3-bloco div:nth-child(4) {
+.main3-col2 div:nth-child(4) {
   width: 100%;
 }
 
@@ -171,6 +179,51 @@
 .botao-estilistico:hover:after {
   width: 100%;
 }
+
+/*=====================================
+        botao da direita
+=======================================*/
+
+.botao-estilistico2 {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  margin: 20px auto;
+}
+
+.botao-estilistico2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.botao-estilistico2:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: var(--cor-destaque);
+  transition: all 0.35s;
+}
+
+.botao-estilistico2:hover {
+  color: #fff;
+}
+
+.botao-estilistico2:hover:after {
+  width: 100%;
+}
 /*
 ===================================================
 */
@@ -215,7 +268,7 @@
 */
 
 .main5 {
-  height: 340px;
+  height: auto;
   margin: 10px auto;
   background: rgb(95, 95, 95);
   width: 100%;
@@ -239,6 +292,10 @@
 .main5-bloco-col1 p,
 .main5-bloco-col2 p {
   width: 50%;
+}
+
+.main5-whats {
+  height: 100%;
 }
 
 .main5-bloco-col2 .icon-whatsapp {
@@ -271,6 +328,86 @@
 
 .main5-bloco-col2 .botao-whats:hover,
 .main5-bloco-col2 .botao-whats:hover .icon-whatsapp {
-  font-size: 120px;
+  font-size: 80px;
   transform: rotate(720deg);
+}
+
+/*
+===================================================
+            main 6
+===================================================
+*/
+
+.main6 {
+  height: auto;
+  background: rgb(95, 95, 95);
+  overflow: hidden;
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main6-bloco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.main6-bloco-col1,
+.main6-bloco-col2 {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.main6-bloco-col1 picture,
+.main6-bloco-col2 picture {
+  display: flex;
+  flex: 1;
+  width: 25%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main6-bloco-col1 a,
+.main6-bloco-col2 a {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  transition: 1s filter;
+}
+
+.main6-bloco-col1 img,
+.main6-bloco-col2 img {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.main6-bloco-col1 a:hover,
+.main6-bloco-col2 a:hover {
+  filter: grayscale(0);
+}
+.main6-janela {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  width: 32%;
+  height: 20%;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #00000078;
+  margin: 50px 0 0;
+}
+
+.main6-bloco-col1 picture:hover .main6-janela,
+.main6-bloco-col2 picture:hover .main6-janela {
+  display: flex;
 }
