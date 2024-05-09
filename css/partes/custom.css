@@ -346,6 +346,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .main6-bloco {
   display: flex;
@@ -353,6 +355,7 @@
   flex-direction: row;
   justify-content: center;
   max-width: 1200px;
+  width: 100%;
 }
 
 .main6-bloco-col1,
@@ -361,53 +364,110 @@
   display: flex;
   gap: 10px;
   justify-content: space-around;
+  margin: 10px;
 }
 
-.main6-bloco-col1 picture,
-.main6-bloco-col2 picture {
-  display: flex;
-  flex: 1;
-  width: 25%;
-  flex-direction: column;
+.main6-imagem1 {
+  background: url("../../imagens/fotos/converted-american-style-truck-on-freeway-600nw-528660739.webp");
+}
+.main6-imagem2 {
+  background: url("../../imagens/fotos/converted-autonomous-semitruck-trailer-controlled-by-600nw-2342416523.webp");
+}
+.main6-imagem3 {
+  background: url("../../imagens/fotos/converted-driver-semitruck-sitting-drining-his-600nw-2193931743.webp");
+}
+.main6-imagem4 {
+  background: url("../../imagens/fotos/converted-happy-confident-male-driver-standing-600nw-2154987057.webp");
+}
+.main6-imagem5 {
+  background: url("../../imagens/fotos/converted-industrial-long-hauler-big-rig-600nw-2253269511.webp");
+}
+.main6-imagem6 {
+  background: url("../../imagens/fotos/converted-truck-transport-on-road-sunset-600nw-2273845015.webp");
+}
+
+.main6-fundo {
   overflow: hidden;
-}
-
-.main6-bloco-col1 a,
-.main6-bloco-col2 a {
-  flex: 1;
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 300px;
+  background-repeat: round;
   filter: grayscale(1);
   transition: 1s filter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
 }
 
-.main6-bloco-col1 img,
-.main6-bloco-col2 img {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.main6-bloco-col1 a:hover,
-.main6-bloco-col2 a:hover {
+.main6-fundo:hover {
   filter: grayscale(0);
 }
+
 .main6-janela {
   display: none;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  width: 32%;
-  height: 20%;
-  position: absolute;
+  text-align: center;
+  background: rgb(0 0 0 / 52%);
+  width: 100%;
+  margin: 0 auto;
+  height: 66%;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  background: #00000078;
-  margin: 50px 0 0;
+  justify-content: center;
+  animation: scrollJanelaSobe 2s;
 }
 
-.main6-bloco-col1 picture:hover .main6-janela,
-.main6-bloco-col2 picture:hover .main6-janela {
+.main6-janela p {
+  color: white;
+}
+
+.main6-fundo:hover .main6-janela {
   display: flex;
+  animation: scrollJanela 2s;
+}
+
+.main6-janela-button {
+  background: white;
+  border-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  }
+  30% {
+    transform: translateX(10px);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(233, 30, 99, 0);
+    transform: translateX(-10px);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(233, 30, 99, 0);
+  }
+}
+
+@keyframes scrollJanela {
+  from {
+    margin-top: 100%;
+    max-height: 0;
+  }
+  to {
+    margin-top: 0;
+    max-height: 200px;
+  }
+}
+@keyframes scrollJanelaSobe {
+  from {
+    display: block;
+    margin-top: 0;
+    max-height: 200px;
+  }
+  to {
+    display: none;
+    margin-top: 100%;
+    max-height: 0;
+  }
 }
