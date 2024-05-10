@@ -1,6 +1,7 @@
 .main1 {
   background-color: rgb(128 128 128);
-  margin: 20px auto;
+  margin: 0px auto;
+  padding: 20px 0;
 }
 
 .main1-bloco {
@@ -19,7 +20,7 @@
 */
 .main2 {
   height: auto;
-  margin: 10px auto;
+  margin: 0px auto;
   background: grey;
 }
 
@@ -79,7 +80,7 @@
 */
 .main3 {
   height: auto;
-  margin: 10px auto;
+  margin: 0px auto;
   background: grey;
   width: 100%;
   overflow: hidden;
@@ -236,7 +237,7 @@
 
 .main4 {
   height: 340px;
-  margin: 10px auto;
+  margin: 0px auto;
   background: rgb(95, 95, 95);
   width: 100%;
   overflow: hidden;
@@ -269,7 +270,7 @@
 
 .main5 {
   height: auto;
-  margin: 10px auto;
+  margin: 0px auto;
   background: rgb(95, 95, 95);
   width: 100%;
   overflow: hidden;
@@ -342,7 +343,7 @@
   height: auto;
   background: rgb(95, 95, 95);
   overflow: hidden;
-  margin: 10px auto;
+  margin: 0px auto;
   width: 100%;
   display: flex;
   justify-content: center;

@@ -1,0 +1,258 @@
+.main7 {
+  height: auto;
+  background: rgb(95, 95, 95);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.main7-bloco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.main7-bloco-col1,
+.main7-bloco-col2 {
+  width: 100%;
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  margin: 10px 0px;
+  gap: 1px;
+}
+
+.main7-imagem1 {
+  background: url("../../imagens/fotos/converted-american-style-truck-on-freeway-600nw-528660739.webp");
+}
+.main7-imagem2 {
+  background: url("../../imagens/fotos/converted-autonomous-semitruck-trailer-controlled-by-600nw-2342416523.webp");
+}
+.main7-imagem3 {
+  background: url("../../imagens/fotos/converted-driver-semitruck-sitting-drining-his-600nw-2193931743.webp");
+}
+
+.main7-fundo {
+  overflow: hidden;
+  width: 10%;
+  height: 300px;
+  transition: 1s filter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 2s all;
+}
+
+.main7-fundo:hover {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main7-janela {
+  display: flex;
+  text-align: center;
+  background: rgb(0 0 0 / 52%);
+  width: 100%;
+  margin: 0 auto;
+  height: 66%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main7-janela p {
+  color: white;
+}
+
+.main7-titulo-janela {
+  transition: 2s all;
+}
+
+.main7-fundo:hover .main7-titulo-janela {
+  font-size: 2.3rem;
+}
+
+.main7-janela-button {
+  background: white;
+  border-color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.main7-texto-conteudo {
+  font-size: 0;
+  opacity: 0;
+  transition: 2s all;
+}
+
+.main7-fundo:hover .main7-texto-conteudo {
+  font-size: 1.8rem;
+  opacity: 1;
+}
+
+.main7-janela-button {
+  cursor: pointer;
+}
+
+.main7-janela-button:hover {
+  background: #8c1616;
+  transition: 1s all;
+  border-color: #8c1616;
+  color: white;
+}
+
+/*================================
+                MAIN8
+  =================================*/
+.main8 h2 {
+  color: white;
+}
+.main8 {
+  height: auto;
+  background: rgb(136, 0, 91);
+  overflow: hidden;
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: -2;
+  overflow: hidden;
+}
+.main8-bloco {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+.main8-bloco-col {
+  width: 100%;
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  margin: 10px 0px;
+  gap: 1px;
+}
+
+.main8-comentario {
+  font-size: 3.5rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: monospace;
+  margin: 10px auto 50px;
+}
+
+.main8-comentario::before {
+  content: '"';
+  font-size: 5rem;
+  top: 0;
+  left: -40px;
+}
+
+.main8-comentario::after {
+  content: '"';
+  font-size: 5rem;
+  top: 0;
+  left: -40px;
+}
+
+.main8-usuario {
+  display: flex;
+  align-items: center;
+}
+.main8-usuario picture img {
+  border-radius: 50%;
+  width: 100px;
+  border: 5px solid white;
+}
+.main8-usuario-dados {
+  display: flex;
+  flex-direction: column;
+}
+
+.main8-usuario-nome {
+  font-size: 3rem;
+  color: white;
+}
+.main8-usuario-cargo {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+.main8 video {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.main8-botao-chamada {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  background: #ffa12b00;
+  border: none;
+}
+
+.main8-botao-chamada a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffa12b;
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+  text-shadow: 2px 1px 4px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.main8-botao-chamada a:active {
+  top: 10px;
+  background-color: #f78900;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+}
+
+.main8-botao-chamada:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2b1800;
+  border-radius: 5px;
+}
+
+.main8 strong {
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: fantasy;
+  color: #ffa12b;
+  letter-spacing: 1px;
+  text-shadow: 2px 1px black;
+  margin-left: 3px;
+}
