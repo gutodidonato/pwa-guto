@@ -309,6 +309,15 @@
   transition: 1s width;
 }
 
+.main9-col-tipo1::after {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 300px;
+  background-color: blue;
+}
+
 .main9-col-tipo1 .vidro {
   background: rgb(255, 0, 0);
   height: 120%;
@@ -319,7 +328,7 @@
 
 .main9-col-tipo1 .vidro2 {
   background: rgb(109, 32, 32);
-  height: 80%;
+  height: 45%;
   margin-left: auto;
   position: relative;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -327,7 +336,7 @@
 
 .main9-col-tipo2 .vidro {
   background: rgb(202, 15, 15);
-  height: 120%;
+  height: 101%;
   margin-left: auto;
   position: relative;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -335,7 +344,7 @@
 
 .main9-col-tipo2 .vidro2 {
   background: rgb(102, 21, 21);
-  height: 60%;
+  height: 80%;
   margin-left: auto;
   position: relative;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -343,7 +352,7 @@
 
 .main9-col-tipo3 .vidro {
   background: rgb(129, 4, 4);
-  height: 120%;
+  height: 139%;
   margin-left: auto;
   position: relative;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -351,10 +360,11 @@
 
 .main9-col-tipo3 .vidro2 {
   background: rgb(161, 18, 18);
-  height: 90%;
+  height: 60%;
   margin-left: auto;
   position: relative;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  margin-bottom: 57px;
 }
 
 .main9-col-tipo4 .vidro {
@@ -367,53 +377,56 @@
 
 .main9-col-tipo4 .vidro2 {
   background: rgb(83, 16, 16);
-  height: 80%;
+  height: 70%;
   margin-left: auto;
   position: relative;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  margin-bottom: 19px;
 }
 
 .main9 .vidro2 {
   width: 0;
   transition: 1s all;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
 }
 
 .main9:hover .main9-col-tipo1 .vidro .vidro2 {
   width: 40%;
   transition: 2s width;
+  transition-delay: 0.5s;
 }
 .main9:hover .main9-col-tipo2 .vidro .vidro2 {
   width: 80%;
   transition: 2.5s width;
+  transition-delay: 1s;
 }
 .main9:hover .main9-col-tipo3 .vidro .vidro2 {
   width: 60%;
   transition: 1.5s width;
+  transition-delay: 2s;
 }
 .main9:hover .main9-col-tipo4 .vidro .vidro2 {
   width: 50%;
   transition: 2.1s width;
+  transition-delay: 1.5s;
 }
 
 .main9:hover .main9-col-tipo1 .vidro {
   width: 40%;
   transition: 0.75s width;
+  transition-delay: 1s;
 }
 .main9:hover .main9-col-tipo2 .vidro {
   width: 40%;
   transition: 2s width;
+  transition-delay: 0.5s;
 }
 .main9:hover .main9-col-tipo3 .vidro {
   width: 40%;
   transition: 1.5s width;
+  transition-delay: 1.2s;
 }
 .main9:hover .main9-col-tipo4 .vidro {
   width: 40%;
   transition: 2s 1s width;
+  transition-delay: 1.3s;
 }
