@@ -1,5 +1,5 @@
 .main1 {
-  background-color: rgb(128 128 128);
+  background-color: rgb(241 241 241);
   margin: 0px auto;
   padding: 20px 0;
 }
@@ -21,7 +21,7 @@
 .main2 {
   height: auto;
   margin: 0px auto;
-  background: grey;
+  background: rgb(241 241 241);
 }
 
 .main2 p {
@@ -42,15 +42,14 @@
   height: 0;
 }
 .main2-col2 img {
-  width: 708px;
-  height: 299px;
-  image-rendering: pixelated;
+  width: 100%;
+  height: auto;
 }
 
 .main2-col1 {
   width: 100%;
   height: 100px;
-  background-color: grey;
+  background-color: rgb(241 241 241);
   clip-path: polygon(0% 0%, 50% 0%, 70% 94%, 0% 94%);
   height: 100%;
   padding: 8px 0;
@@ -81,7 +80,7 @@
 .main3 {
   height: auto;
   margin: 0px auto;
-  background: grey;
+  background: rgb(241 241 241);
   width: 100%;
   overflow: hidden;
 }
@@ -102,14 +101,13 @@
   height: 0;
 }
 .main3-col1 img {
-  width: 708px;
-  height: 271px;
-  image-rendering: pixelated;
+  width: 100%;
+  height: auto;
 }
 
 .main3-col2 {
   width: 100%;
-  background-color: grey;
+  background-color: rgb(241 241 241);
   clip-path: polygon(100% 0%, 50% 0%, 30% 94%, 100% 94%);
   height: auto;
   padding: 20px 0;
@@ -160,6 +158,8 @@
 .botao-estilistico span {
   position: relative;
   z-index: 2;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .botao-estilistico:after {
@@ -205,6 +205,8 @@
 .botao-estilistico2 span {
   position: relative;
   z-index: 2;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .botao-estilistico2:after {
@@ -238,7 +240,7 @@
 .main4 {
   height: 340px;
   margin: 0px auto;
-  background: rgb(95, 95, 95);
+  background: rgb(241 241 241);
   width: 100%;
   overflow: hidden;
 }
@@ -271,7 +273,7 @@
 .main5 {
   height: auto;
   margin: 0px auto;
-  background: rgb(95, 95, 95);
+  background: rgb(241 241 241);
   width: 100%;
   overflow: hidden;
 }
@@ -341,7 +343,7 @@
 
 .main6 {
   height: auto;
-  background: rgb(95, 95, 95);
+  background: rgb(241 241 241);
   overflow: hidden;
   margin: 0px auto;
   width: 100%;

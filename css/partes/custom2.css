@@ -1,6 +1,6 @@
 .main7 {
   height: auto;
-  background: rgb(95, 95, 95);
+  background: rgb(241 241 241);
   overflow: hidden;
   width: 100%;
   display: flex;
@@ -498,7 +498,7 @@
   margin-top: 40px;
 }
 .main10-fragmento4 {
-  background-color: #b9260c;
+  background-color: #e03011;
   margin-top: 20px;
   z-index: 0;
   margin-top: 70px;
@@ -528,19 +528,19 @@
   margin-top: 220px;
 }
 .main10-fragmento9 {
-  background-color: #ff2727;
+  background-color: #ff0606;
   margin-top: 20px;
   z-index: 1;
   margin-top: 260px;
 }
 .main10-fragmento10 {
-  background-color: #ff0800;
+  background-color: #c9120c;
   margin-top: 20px;
   z-index: 0;
   margin-top: 280px;
 }
 .main10-fragmento11 {
-  background-color: #ff4039;
+  background-color: #ff170f;
   margin-top: 20px;
   z-index: 1;
   margin-top: 310px;
