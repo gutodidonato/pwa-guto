@@ -257,6 +257,10 @@
   margin-left: 3px;
 }
 
+/*================================
+                MAIN9
+  =================================*/
+
 .main9 {
   height: auto;
   background: url("../../imagens/fundo/converted-imagem-reuniao.webp");
@@ -429,4 +433,198 @@
   width: 40%;
   transition: 2s 1s width;
   transition-delay: 1.3s;
+}
+
+/*================================
+                MAIN10
+  =================================*/
+
+.main10 {
+  height: auto;
+  background: url("../../imagens/fundo/converted-imagem-reuniao.webp");
+  overflow: hidden;
+  margin: 10px auto;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main10-col {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  margin-left: auto;
+}
+.main10-fragmento1,
+.main10-fragmento2,
+.main10-fragmento3,
+.main10-fragmento4,
+.main10-fragmento5,
+.main10-fragmento6,
+.main10-fragmento7,
+.main10-fragmento8,
+.main10-fragmento9,
+.main10-fragmento10,
+.main10-fragmento11,
+.main10-fragmento12,
+.main10-fragmento13,
+.main10-fragmento14 {
+  width: 0%;
+  right: 0;
+  height: 50px;
+  position: absolute;
+  transition: 1s all;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.main10-fragmento1 {
+  background-color: #8c1616;
+  margin-top: 0;
+  z-index: 1;
+}
+.main10-fragmento2 {
+  background-color: #e02517;
+  margin-top: 20px;
+  z-index: 2;
+}
+.main10-fragmento3 {
+  background-color: #a71919;
+  margin-top: 20px;
+  z-index: 1;
+  margin-top: 40px;
+}
+.main10-fragmento4 {
+  background-color: #b9260c;
+  margin-top: 20px;
+  z-index: 0;
+  margin-top: 70px;
+}
+.main10-fragmento5 {
+  background-color: #ff0000;
+  margin-top: 20px;
+  z-index: 1;
+  margin-top: 110px;
+}
+.main10-fragmento6 {
+  background-color: #d41515;
+  margin-top: 20px;
+  z-index: 0;
+  margin-top: 150px;
+}
+.main10-fragmento7 {
+  background-color: #cf3014;
+  margin-top: 20px;
+  z-index: 1;
+  margin-top: 190px;
+}
+.main10-fragmento8 {
+  background-color: #da0d0d;
+  margin-top: 20px;
+  z-index: 2;
+  margin-top: 220px;
+}
+.main10-fragmento9 {
+  background-color: #ff2727;
+  margin-top: 20px;
+  z-index: 1;
+  margin-top: 260px;
+}
+.main10-fragmento10 {
+  background-color: #ff0800;
+  margin-top: 20px;
+  z-index: 0;
+  margin-top: 280px;
+}
+.main10-fragmento11 {
+  background-color: #ff4039;
+  margin-top: 20px;
+  z-index: 1;
+  margin-top: 310px;
+}
+.main10-fragmento12 {
+  background-color: #df0000;
+  margin-top: 20px;
+  z-index: 0;
+  margin-top: 330px;
+}
+.main10-fragmento13 {
+  background-color: #f80000;
+  margin-top: 20px;
+  z-index: 1;
+  margin-top: 350px;
+}
+
+.main10:hover .main10-fragmento1 {
+  width: 40%;
+  transition: 1s all;
+  transition-delay: 1.2s;
+}
+.main10:hover .main10-fragmento2 {
+  width: 30%;
+  transition: 1s all;
+  transition-delay: 1.8s;
+}
+.main10:hover .main10-fragmento3 {
+  width: 35%;
+  transition: 1s all;
+  transition-delay: 1s;
+}
+.main10:hover .main10-fragmento4 {
+  width: 38%;
+  transition: 1s all;
+  transition-delay: 0.5s;
+}
+.main10:hover .main10-fragmento5 {
+  width: 30%;
+  transition: 1s all;
+  transition-delay: 1.3s;
+}
+.main10:hover .main10-fragmento6 {
+  width: 20%;
+  transition: 1s all;
+  transition-delay: 0.5s;
+}
+.main10:hover .main10-fragmento7 {
+  width: 33%;
+  transition: 1s all;
+  transition-delay: 1.4s;
+}
+.main10:hover .main10-fragmento8 {
+  width: 28%;
+  transition: 1s all;
+  transition-delay: 2s;
+}
+.main10:hover .main10-fragmento9 {
+  width: 30%;
+  transition: 1s all;
+  transition-delay: 1s;
+}
+.main10:hover .main10-fragmento10 {
+  width: 38%;
+  transition: 1s all;
+  transition-delay: 0.5s;
+}
+.main10:hover .main10-fragmento11 {
+  width: 40%;
+  transition: 1s all;
+  transition-delay: 1.5s;
+}
+.main10:hover .main10-fragmento12 {
+  width: 29%;
+  transition: 1s all;
+  transition-delay: 0.8s;
+}
+.main10:hover .main10-fragmento13 {
+  width: 36%;
+  transition: 1s all;
+  transition-delay: 1.4s;
+}
+.main10:hover .main10-fragmento14 {
+  width: 34%;
+  transition: 1s all;
+  transition-delay: 1.2s;
 }
